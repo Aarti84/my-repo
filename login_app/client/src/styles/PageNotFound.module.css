@@ -1,0 +1,38 @@
+/* NotFoundPage.css */
+/* Make the container fill the entire viewport */
+.notFoundPage {
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center; /* Center the image vertically */
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+/* Make the image fill the container while maintaining aspect ratio */
+.notFoundPageImg {
+    max-width: 100%; /* Ensure the image does not exceed the container's width */
+    max-height: 100%; /* Ensure the image does not exceed the container's height */
+}
+
+.overlayButton {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    height: 9%;
+    width: 12%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    background-color: green;
+    border: 1px solid #000000;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn{
+    @apply border bg-indigo-800 w-3/4 py-4 rounded-lg text-gray-50 text-sm shadow-sm text-center;
+}
+
+.btn:hover{
+    background-color: #ff6a6a;
+}
